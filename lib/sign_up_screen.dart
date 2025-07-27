@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_delivery_app/categories_page.dart';
 import 'package:flutter_food_delivery_app/login_screen.dart';
 import 'components.dart';
 
@@ -93,16 +94,13 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                       const SizedBox(height: 10),
                       roundedInputField(
-                        controller: numberController,
                         label: 'Phone Number',
-                        obscureText: false,
+                        controller: numberController,
                         validator: (value) {
-                          if (value == null ||
-                              value.isEmpty ||
-                              value == '+92') {
-                            return 'Enter a valid phone number';
-                          } else if (!RegExp(r'^\+92\d{10}$').hasMatch(value)) {
-                            return 'Phone must be in format +923XXXXXXXXX';
+                          if (value == null || value.isEmpty) {
+                            return 'Enter your phone number';
+                          } else if (!RegExp(r'^03\d{9}$').hasMatch(value)) {
+                            return 'Enter a valid 11-digit number starting with 03';
                           }
                           return null;
                         },
@@ -122,7 +120,20 @@ class _SignupScreenState extends State<SignupScreen> {
                           text: 'Sign up',
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              // Signup logic goes here
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const CategoriesPage()),
+                              );
+
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=> const CategoriesPage(),));
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const CategoriesPage()),
+                              );
+                              //will add the navigation
                             }
                           },
                         ),

@@ -31,7 +31,7 @@ class _HomePageViewState extends State<HomePageView> {
                   size: 22,
                 ),
                 Text(
-                  'Well Come',
+                  'Wel Come',
                   style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery_app/categories_page.dart';
 import 'components.dart';
 import 'sign_up_screen.dart';
+import 'package:flutter_food_delivery_app/home_page_view.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -74,14 +75,15 @@ class _LoginScreenState extends State<LoginScreen> {
                           text: 'Log in',
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              // Login logic goes here
-                              Navigator.push(
+                                Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) =>
-                                        const CategoriesPage(),
-                                  ));
-                            }
+                                      builder: (context) =>
+                                          const CategoriesPage()),
+                                );
+                                //will add the navigation
+                              }
+                            
                           },
                         ),
                       ),
