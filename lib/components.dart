@@ -29,7 +29,7 @@ Widget roundedButton({
   return ElevatedButton(
     onPressed: onPressed,
     style: ElevatedButton.styleFrom(
-      backgroundColor:Color.fromARGB(255, 249, 216, 245),
+      backgroundColor: Color.fromARGB(255, 249, 216, 245),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
       ),
@@ -37,9 +37,14 @@ Widget roundedButton({
     ),
     child: Text(
       text,
-      style: const TextStyle(color:Color.fromARGB(255, 231, 34, 169) ,fontWeight: FontWeight.bold), 
+      style: const TextStyle(
+          color: Color.fromARGB(255, 231, 34, 169),
+          fontWeight: FontWeight.bold),
     ),
   );
 }
  //This screen contains the Buttons colors, so if you have addedd anny buttons in your screen, so to pursue
  //the theme, make buttons by importing this file
+
+
+

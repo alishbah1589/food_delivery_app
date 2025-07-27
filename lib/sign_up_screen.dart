@@ -7,11 +7,7 @@ class SignupScreen extends StatefulWidget {
 
   @override
   State<SignupScreen> createState() => _SignupScreenState();
-
-  
 }
-
-
 
 class _SignupScreenState extends State<SignupScreen> {
   final _formKey = GlobalKey<FormState>();
@@ -95,13 +91,11 @@ class _SignupScreenState extends State<SignupScreen> {
                             ? 'Passwords do not match'
                             : null,
                       ),
-                      const SizedBox(height: 10), 
+                      const SizedBox(height: 10),
                       roundedInputField(
                         controller: numberController,
-                          label: 'Phone Number',
-                          obscureText: false,
-                          
-                        
+                        label: 'Phone Number',
+                        obscureText: false,
                         validator: (value) {
                           if (value == null ||
                               value.isEmpty ||

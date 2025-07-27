@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_delivery_app/categories_page.dart';
 import 'components.dart';
 import 'sign_up_screen.dart';
 
@@ -37,7 +38,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 20),
                       const CircleAvatar(
                         radius: 50,
-                        backgroundImage: NetworkImage('https://media.istockphoto.com/id/1456230856/photo/cute-panda-riding-a-motorcycle-panda-delivery-3d-rendering.webp?a=1&b=1&s=612x612&w=0&k=20&c=POuuF_9bxzsM0kED00WWgwGzK-6HnzOxbZCR0me9Rpg='),
+                        backgroundImage: NetworkImage(
+                            'https://media.istockphoto.com/id/1456230856/photo/cute-panda-riding-a-motorcycle-panda-delivery-3d-rendering.webp?a=1&b=1&s=612x612&w=0&k=20&c=POuuF_9bxzsM0kED00WWgwGzK-6HnzOxbZCR0me9Rpg='),
                         backgroundColor: Colors.transparent,
                       ),
                       const Text(
@@ -73,10 +75,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
                               // Login logic goes here
-
-
-
-
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        const CategoriesPage(),
+                                  ));
                             }
                           },
                         ),
