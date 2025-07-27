@@ -16,7 +16,7 @@ class WelcomeScreen extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 125,
-                backgroundImage: NetworkImage('https://media.istockphoto.com/id/1456230200/photo/cute-panda-riding-scooter-panda-delivery-3d-rendering.jpg?s=612x612&w=0&k=20&c=EVPcHn-Mmdmox6Qa9ijFefKM_nHXol0d-MZukV2fb0k='), 
+                backgroundImage: NetworkImage('https://media.istockphoto.com/id/1456230856/photo/cute-panda-riding-a-motorcycle-panda-delivery-3d-rendering.webp?a=1&b=1&s=612x612&w=0&k=20&c=POuuF_9bxzsM0kED00WWgwGzK-6HnzOxbZCR0me9Rpg='), 
                 backgroundColor: Colors.white,
               ),
               const SizedBox(height: 30),

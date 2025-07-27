@@ -14,10 +14,10 @@ Widget roundedInputField({
       labelText: label,
       labelStyle: const TextStyle(fontWeight: FontWeight.w500),
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(30),
       ),
       filled: true,
-      fillColor: Colors.white.withOpacity(0.9),
+      fillColor: Colors.white.withOpacity(0.6),
     ),
   );
 }
@@ -29,15 +29,17 @@ Widget roundedButton({
   return ElevatedButton(
     onPressed: onPressed,
     style: ElevatedButton.styleFrom(
-      backgroundColor:Color.fromARGB(255, 231, 34, 169),
+      backgroundColor:Color.fromARGB(255, 249, 216, 245),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
       ),
-      minimumSize: const Size.fromHeight(50),
+      minimumSize: const Size.fromHeight(45),
     ),
     child: Text(
       text,
-      style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold), 
+      style: const TextStyle(color:Color.fromARGB(255, 231, 34, 169) ,fontWeight: FontWeight.bold), 
     ),
   );
 }
+ //This screen contains the Buttons colors, so if you have addedd anny buttons in your screen, so to pursue
+ //the theme, make buttons by importing this file
