@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery_app/container_img_model.dart';
 
-class CustomContainer extends StatefulWidget {
-  const CustomContainer({super.key, required this.containerImgModel});
+class BrandsContainer extends StatefulWidget {
+  const BrandsContainer({super.key, required this.containerImgModel});
   final ContainerImgModel containerImgModel;
 
   @override
-  State<CustomContainer> createState() => _CustomContainerState();
+  State<BrandsContainer> createState() => _CustomContainerState();
 }
 
-class _CustomContainerState extends State<CustomContainer> {
+class _CustomContainerState extends State<BrandsContainer> {
   @override
   Widget build(BuildContext context) {
     return Padding(

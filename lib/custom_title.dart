@@ -15,17 +15,17 @@ class _CustomTitleState extends State<CustomTitle> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: Container(
-        height: 240,
-        width: 200,
+        height: 400,
+        width: 500,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Colors.black, width: 1),
+          // border: Border.all(color: Colors.black, width: 1),
         ),
         child: Column(
           children: [
             Container(
-              height: 150,
-              width: 200,
+              height: 300,
+              width: 500,
               decoration: BoxDecoration(
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(20),

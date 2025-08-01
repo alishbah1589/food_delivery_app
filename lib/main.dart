@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery_app/categories_page.dart';
+import 'package:flutter_food_delivery_app/favorite_pge_view.dart';
 import 'welcome_screen.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink),
         useMaterial3: true,
       ),
-      home: const WelcomeScreen(),
+      home: const FavoritePageView(),
     );
   }
 }
