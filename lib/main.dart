@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery_app/categories_page.dart';
-import 'package:flutter_food_delivery_app/main_home_page_view.dart';
+
 import 'welcome_screen.dart';
 
 void main() {
