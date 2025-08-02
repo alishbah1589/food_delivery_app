@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery_app/categories_page.dart';
+import 'package:flutter_food_delivery_app/main_home_page_view.dart';
 import 'components.dart';
 import 'sign_up_screen.dart';
 import 'package:flutter_food_delivery_app/home_page_view.dart';
@@ -75,15 +76,15 @@ class _LoginScreenState extends State<LoginScreen> {
                           text: 'Log in',
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                                Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const CategoriesPage()),
-                                );
-                                //will add the navigation
-                              }
-                            
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                      
+                                      const  MainHomePageView()),
+                              );
+                              //will add the navigation
+                            }
                           },
                         ),
                       ),

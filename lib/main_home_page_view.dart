@@ -6,8 +6,8 @@ import 'package:flutter_food_delivery_app/custom_title.dart';
 import 'package:flutter_food_delivery_app/list.dart';
 import 'package:flutter_food_delivery_app/list_of_container.dart';
 
-class FavoritePageView extends StatelessWidget {
-  const FavoritePageView({super.key});
+class MainHomePageView extends StatelessWidget {
+  const MainHomePageView({super.key});
   @override
   Widget build(BuildContext context) {
     return Center(

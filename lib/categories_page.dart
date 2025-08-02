@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery_app/favorite_pge_view.dart';
+import 'package:flutter_food_delivery_app/main_home_page_view.dart';
 import 'package:flutter_food_delivery_app/home_page_view.dart';
-import 'package:flutter_food_delivery_app/menu_page_view.dart';
+
 
 class CategoriesPage extends StatefulWidget {
   const CategoriesPage({super.key});
@@ -48,9 +48,9 @@ class _CategoriesPageState extends State<CategoriesPage> {
           });
         },
         children: const [
-          HomePageView(),
-          FavoritePageView(),
-          MenuPageView(),
+         
+          MainHomePageView(),
+         
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

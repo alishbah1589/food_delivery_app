@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery_app/categories_page.dart';
+import 'package:flutter_food_delivery_app/main_home_page_view.dart';
 import 'package:flutter_food_delivery_app/login_screen.dart';
 import 'components.dart';
 
@@ -127,11 +128,17 @@ class _SignupScreenState extends State<SignupScreen> {
                                         const CategoriesPage()),
                               );
 
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=> const CategoriesPage(),));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        const CategoriesPage(),
+                                  ));
                               Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const CategoriesPage()),
+                                    builder: (context) =>
+                                        const MainHomePageView()),
                               );
                               //will add the navigation
                             }
