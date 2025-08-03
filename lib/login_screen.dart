@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery_app/main_home_page_view.dart';
+import 'package:flutter_food_delivery_app/favorite_pge_view.dart';
 import 'components.dart';
 import 'sign_up_screen.dart';
-
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -79,8 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                      
-                                      const  MainHomePageView()),
+                                        const FavoritePageView()),
                               );
                               //will add the navigation
                             }
